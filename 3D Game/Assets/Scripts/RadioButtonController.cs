@@ -11,7 +11,7 @@ public class RadioButtonController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		//difficulty = 0;
+		difficulty = 0;
 	}
 	
 	// Update is called once per frame
@@ -25,5 +25,6 @@ public class RadioButtonController : MonoBehaviour {
 		if (hardButton.isOn) {
 			difficulty = 2;
 		}
+		PlayerPrefs.SetInt ("Difficulty", difficulty);
 	}
 }
