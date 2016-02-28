@@ -18,10 +18,10 @@ public class Camera : MonoBehaviour {
 				-(Input.GetAxis ("Mouse X") * RotationSpeed * Time.deltaTime), Space.World);
 		}
 
-		if (Input.GetAxis ("Mouse ScrollWheel") > 0 && camera.transform.localScale.z > 25) {
-			camera.transform.localScale += new Vector3 (0.0f, 0.0f, -Input.GetAxis ("Mouse ScrollWheel") * 4);
+		if (Input.GetAxis ("Mouse ScrollWheel") > 0 && camera.transform.localScale.z > 20) {
+			camera.transform.localScale += new Vector3 (0.0f, 0.0f, -Input.GetAxis ("Mouse ScrollWheel") * 5);
 		} else if (Input.GetAxis ("Mouse ScrollWheel") < 0 && camera.transform.localScale.z < 40) {
-			camera.transform.localScale += new Vector3 (0.0f, 0.0f, -Input.GetAxis ("Mouse ScrollWheel") * 4);
+			camera.transform.localScale += new Vector3 (0.0f, 0.0f, -Input.GetAxis ("Mouse ScrollWheel") * 5);
 		}
 	}
 
