@@ -22,9 +22,9 @@ public class Camera : MonoBehaviour {
 			}
 
 			if (Input.GetAxis ("Mouse ScrollWheel") > 0 && camera.transform.localScale.z > 20) {
-				camera.transform.localScale += new Vector3 (0.0f, 0.0f, -Input.GetAxis ("Mouse ScrollWheel") * 5);
-			} else if (Input.GetAxis ("Mouse ScrollWheel") < 0 && camera.transform.localScale.z < 45) {
-				camera.transform.localScale += new Vector3 (0.0f, 0.0f, -Input.GetAxis ("Mouse ScrollWheel") * 5);
+				camera.transform.localScale += new Vector3 (0.0f, 0.0f, -Input.GetAxis ("Mouse ScrollWheel") * 6);
+			} else if (Input.GetAxis ("Mouse ScrollWheel") < 0 && camera.transform.localScale.z < 50) {
+				camera.transform.localScale += new Vector3 (0.0f, 0.0f, -Input.GetAxis ("Mouse ScrollWheel") * 6);
 			}
 
 			//Allows user to rotate the cube with the W and Q  keys. This is a failsafe feature just in case the mouse functionality stops working.
